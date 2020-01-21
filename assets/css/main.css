@@ -145,6 +145,7 @@ input, select, textarea {
 			border: 0;
 		}
 
+
 	h2 {
 		font-size: 2em;
 		line-height: 1.5em;
@@ -2157,10 +2158,11 @@ input, select, textarea {
 		color: #ffffff;
 		position: relative;
 		margin: 0 0 1.5em 0;
+		font-family: "Roboto", Helvetica, sans-serif;
 	}
 
 	header h2 + p {
-		font-size: 1.25em;
+		font-size: 1.75em;
 		margin-top: -1em;
 		line-height: 1.75em;
 	}
@@ -3202,11 +3204,14 @@ input, select, textarea {
 /* Wrapper */
 
 	p#p10, p#p11{
-		display: contents;
+		margin: 0 auto;
+		font-weight: bolder;
+		font-size: 30px;
+		padding-top: -30px;
 	}
 
 	.wrapper {
-		padding: 6em 0 4em 0;
+		padding: 3em 0 4em 0;
 	}
 
 		.wrapper.style2 {
@@ -3510,7 +3515,7 @@ input, select, textarea {
 			}
 
 				#banner .content header h2 {
-					font-size: 5em;
+					font-size: 6.5em;
 					margin: 0;
 				}
 
@@ -3662,6 +3667,11 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
+		#banner .content header h2 {
+			font-size: 5em;
+			margin: 0;
+		}
+
 		/* Basic */
 
 			body, input, select, textarea {
@@ -3759,6 +3769,11 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
+
+		#banner .content header h2 {
+			font-size: 5em;
+			margin: 0;
+		}
 
 		/* Basic */
 
@@ -3880,79 +3895,6 @@ input, select, textarea {
 				padding-top: 44px !important;
 			}
 
-			#titleBar {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: 10001;
-				background: #272833;
-				box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
-			}
-
-				#titleBar .title {
-					color: #ffffff;
-					display: block;
-					font-weight: 300;
-					height: 44px;
-					line-height: 44px;
-					text-align: center;
-				}
-
-					#titleBar .title a {
-						color: inherit;
-						border: 0;
-					}
-
-				#titleBar .toggle {
-					text-decoration: none;
-					height: 60px;
-					left: 0;
-					position: absolute;
-					top: 0;
-					width: 90px;
-					outline: 0;
-					border: 0;
-				}
-
-					#titleBar .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						display: inline-block;
-						font-style: normal;
-						font-variant: normal;
-						text-rendering: auto;
-						line-height: 1;
-						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
-						font-weight: 900;
-					}
-
-					#titleBar .toggle:before {
-						background: #e44c65;
-						color: rgba(255, 255, 255, 0.5);
-						content: '\f0c9';
-						display: block;
-						font-size: 18px;
-						height: 44px;
-						left: 0;
-						line-height: 44px;
-						position: absolute;
-						text-align: center;
-						top: 0;
-						width: 54px;
-					}
-
 			#navPanel {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -4059,7 +4001,19 @@ input, select, textarea {
 
 	@media screen and (max-width: 480px) {
 
+		#banner .content header h2 {
+			font-size: 3em;
+			margin: 0;
+		}
+
 		/* Basic */
+
+		p#p10, p#p11{
+			margin: 0 auto;
+			font-weight: bolder;
+			font-size: 18px;
+			padding-top: -30px;
+		}
 
 			html, body {
 				min-width: 320px;
